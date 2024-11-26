@@ -1,0 +1,16 @@
+import aiogram
+from requests import get
+import json
+from bs4 import BeautifulSoup
+import time
+from os import getenv
+import asyncio
+from aiogram import Bot, Dispatcher, types, F
+from aiogram.utils.keyboard import InlineKeyboardBuilder
+from aiogram.types import ReplyKeyboardRemove, \
+    ReplyKeyboardMarkup, KeyboardButton, \
+    InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.filters.command import Command
+dp = Dispatcher()
+TOKEN = config.token
+bot=Bot(token=TOKEN)
